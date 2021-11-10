@@ -16,7 +16,7 @@ https://twb-results.s3-ap-southeast-1.amazonaws.com/xxxx.jpg
 
 
 
-> Twibbonizze('twibbonkbi').create('image.jpg').then(console.log)
+> (new Twibbonizze('twibbonkbi')).create('image.jpg').then(console.log)
 
 https://twb-results.s3-ap-southeast-1.amazonaws.com/xxxx.jpg
 ```
