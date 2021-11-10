@@ -4,7 +4,7 @@
 ```
 # Example
 
-```nodejs
+```js
 > const {twisearch, Twibbonizze} = require('twibbonizze')
 
 
