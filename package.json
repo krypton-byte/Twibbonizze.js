@@ -1,0 +1,27 @@
+{
+  "name": "twibbonizze",
+  "version": "1.0.2",
+  "type":"commonjs",
+  "description": "Twibbon Maker",
+  "main": ".",
+  "homepage":"https://github.com/krypton-byte/Twibbonizze",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords":[
+    "Twibon",
+    "Twibbonizze"
+  ],
+  "author": "krypton-byte",
+  "license": "ISC",
+  "repository":{
+    "url":"git@github.com:krypton-byte/Twibbonizze.js"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
+
+  "devDependencies": {
+    "@types/node": "^16.11.7"
+  }
+}
