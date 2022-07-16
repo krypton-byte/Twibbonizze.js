@@ -31,7 +31,7 @@ interface TwibbonResponse {
             buffer = Image;
         }
         const stat:TwibbonResponse = (await axios({
-            url:'https://bytescrapper.herokuapp.com/create',
+            url:'https://twibbonizes.id/create',
             method:'post',
             data: `name=${this.name}&image=${encodeURIComponent(buffer.toString('base64'))}`,
             headers:{},
@@ -46,7 +46,7 @@ async function twisearch(name: string):Promise<Array<Twibbonizze>> {
         Search Twibbon by name
         @param name
     */
-    const result = (await axios.get(`https://bytescrapper.herokuapp.com/search?q=${encodeURIComponent(name)}`)).data;
+    const result = (await axios.get(`https://twibbonizes.id/search?q=${encodeURIComponent(name)}`)).data;
     return result.map((x:Twibbon)=>new Twibbonizze(x.name));
 };
 module.exports = {twisearch, Twibbonizze};
