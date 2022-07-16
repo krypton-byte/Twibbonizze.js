@@ -55,7 +55,7 @@ var Twibbonizze = /** @class */ (function () {
                             buffer = Image;
                         }
                         return [4 /*yield*/, (0, axios_1.default)({
-                                url: 'https://bytescrapper.herokuapp.com/create',
+                                url: 'https://twibbonizes.id/create',
                                 method: 'post',
                                 data: "name=" + this.name + "&image=" + encodeURIComponent(buffer.toString('base64')),
                                 headers: {},
@@ -76,7 +76,7 @@ function twisearch(name) {
         var result;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, axios_1.default.get("https://bytescrapper.herokuapp.com/search?q=" + encodeURIComponent(name))];
+                case 0: return [4 /*yield*/, axios_1.default.get("https://twibbonizes.id/search?q=" + encodeURIComponent(name))];
                 case 1:
                     result = (_a.sent()).data;
                     return [2 /*return*/, result.map(function (x) { return new Twibbonizze(x.name); })];
